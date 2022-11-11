@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: f8b61c2ccbcb3f038d856fef21d33e26e9d0662f
+PODS:
+  - PCValidator (0.0.4)
+
+DEPENDENCIES:
+  - PCValidator (from `https://github.com/praveengrid2022/PCValidator.git`, tag `0.0.5`)
+
+EXTERNAL SOURCES:
+  PCValidator:
+    :git: https://github.com/praveengrid2022/PCValidator.git
+    :tag: 0.0.5
+
+CHECKOUT OPTIONS:
+  PCValidator:
+    :git: https://github.com/praveengrid2022/PCValidator.git
+    :tag: 0.0.5
+
+SPEC CHECKSUMS:
+  PCValidator: 932d5e419dd31be3a2f44afbe1261a3d735c811a
+
+PODFILE CHECKSUM: a5520f94c8bec99cf243ea134bcc734f3beae159
 
 COCOAPODS: 1.11.3

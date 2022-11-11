@@ -7,7 +7,7 @@ target 'PCExample' do
 
   # Pods for PCExample
 #  PCValidator/PCValidator.podspec
-  pod 'PCValidator', :git => 'https://github.com/praveengrid2022/PCValidator.git' , :tag => '0.0.4'
+  pod 'PCValidator', :git => 'https://github.com/praveengrid2022/PCValidator.git' , :tag => '0.0.5'
   
 
   

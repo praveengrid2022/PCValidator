@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PCExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PCExample
+#  PCValidator/PCValidator.podspec
+  pod 'PCValidator', :git => 'https://github.com/praveengrid2022/PCValidator.git' , :tag => '0.0.4'
+  
+
+  
+end

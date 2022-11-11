@@ -14,7 +14,7 @@ public struct Validator {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-    
+     
     public static func sayHello() {
         print("Hello pretty lady. How are you doing????")
     }

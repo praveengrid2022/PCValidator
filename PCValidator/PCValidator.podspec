@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "PCValidator"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Demo for PCValidator."
 
 

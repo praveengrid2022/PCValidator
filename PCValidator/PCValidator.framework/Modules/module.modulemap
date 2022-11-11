@@ -1,0 +1,11 @@
+framework module PCValidator {
+  umbrella header "PCValidator.h"
+
+  export *
+  module * { export * }
+}
+
+module PCValidator.Swift {
+  header "PCValidator-Swift.h"
+  requires objc
+}

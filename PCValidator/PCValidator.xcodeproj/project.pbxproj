@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		68FDF874963D7656A08EB17B /* Pods_PCValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EACA4012EFFDCB267CCDFD /* Pods_PCValidator.framework */; };
 		EA422935291E53CC007625BA /* PCValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = EA422934291E53CC007625BA /* PCValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA42293C291E64DA007625BA /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42293B291E64DA007625BA /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		79B582593057DF041DBAFA13 /* Pods-PCValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCValidator.release.xcconfig"; path = "Target Support Files/Pods-PCValidator/Pods-PCValidator.release.xcconfig"; sourceTree = "<group>"; };
 		EA422931291E53CC007625BA /* PCValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PCValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA422934291E53CC007625BA /* PCValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCValidator.h; sourceTree = "<group>"; };
+		EA42293B291E64DA007625BA /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		EA9F13F7B74557E49794B0DC /* Pods-PCValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCValidator.debug.xcconfig"; path = "Target Support Files/Pods-PCValidator/Pods-PCValidator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +47,6 @@
 				EA9F13F7B74557E49794B0DC /* Pods-PCValidator.debug.xcconfig */,
 				79B582593057DF041DBAFA13 /* Pods-PCValidator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,6 +71,7 @@
 		EA422933291E53CC007625BA /* PCValidator */ = {
 			isa = PBXGroup;
 			children = (
+				EA42293B291E64DA007625BA /* Validator.swift */,
 				EA422934291E53CC007625BA /* PCValidator.h */,
 			);
 			path = PCValidator;
@@ -119,6 +121,7 @@
 				TargetAttributes = {
 					EA422930291E53CC007625BA = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA42293C291E64DA007625BA /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA9F13F7B74557E49794B0DC /* Pods-PCValidator.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -330,6 +335,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79B582593057DF041DBAFA13 /* Pods-PCValidator.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
